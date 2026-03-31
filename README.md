@@ -274,3 +274,17 @@ This means:
 - Items present in GRN or Invoice but missing in PO are flagged with `item_missing_in_po`
 
 ---
+
+## Live Deployment
+
+**🚀 Live URL**: https://three-way-match-engine-production.up.railway.app  
+**📚 Swagger UI**: https://three-way-match-engine-production.up.railway.app/api-docs  
+**🔍 OpenAPI JSON**: https://three-way-match-engine-production.up.railway.app/api-docs.json  
+
+**Deployment stack**:
+- **Backend**: Railway (Node.js, auto-deploy from GitHub)
+- **Database**: MongoDB Atlas M0 free cluster
+- **API**: Gemini 2.5 Flash for PDF parsing
+- **Infrastructure**: Fully serverless, auto-scaling
+
+---
