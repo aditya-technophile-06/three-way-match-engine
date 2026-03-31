@@ -33,5 +33,3 @@ const start = async (): Promise<void> => {
 };
 
 start().catch(console.error);
-
-export default app;
