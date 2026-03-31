@@ -277,14 +277,40 @@ This means:
 
 ## Live Deployment
 
-**🚀 Live URL**: https://three-way-match-engine-production.up.railway.app  
-**📚 Swagger UI**: https://three-way-match-engine-production.up.railway.app/api-docs  
-**🔍 OpenAPI JSON**: https://three-way-match-engine-production.up.railway.app/api-docs.json  
+**Live URL**: https://three-way-match-engine-production.up.railway.app  
+**Swagger UI**: https://three-way-match-engine-production.up.railway.app/api-docs  
+**OpenAPI JSON**: https://three-way-match-engine-production.up.railway.app/api-docs.json  
 
 **Deployment stack**:
 - **Backend**: Railway (Node.js, auto-deploy from GitHub)
 - **Database**: MongoDB Atlas M0 free cluster
 - **API**: Gemini 2.5 Flash for PDF parsing
 - **Infrastructure**: Fully serverless, auto-scaling
+
+---
+
+## Live API Examples
+
+### Health Check
+```bash
+curl https://three-way-match-engine-production.up.railway.app/health
+```
+
+### Upload a Document
+```bash
+curl -X POST https://three-way-match-engine-production.up.railway.app/documents/upload \
+  -F "file=@/path/to/your/PO.pdf" \
+  -F "documentType=po"
+```
+
+### Get Match Result
+```bash
+curl https://three-way-match-engine-production.up.railway.app/match/CI4PO05788
+```
+
+### List All Documents
+```bash
+curl https://three-way-match-engine-production.up.railway.app/documents
+```
 
 ---
