@@ -1,0 +1,29 @@
+{
+  "name": "three-way-match-engine",
+  "version": "1.0.0",
+  "description": "Backend service for three-way matching of PO, GRN, and Invoice documents",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsx watch src/app.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.13.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
